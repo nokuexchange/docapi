@@ -308,7 +308,7 @@
 <p>Noku Exchange API documentations</p>
 
 <p>We support language bindings in Shell and JavaScript, you can view code examples in the dark area to the right, and you can switch the examples&#39;programming language through the tabs in the top right.</p>
-<h1 id='user'>User</h1><h2 id='get-balance'>Get balance</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.kamiswiss.ch/user/balance"</span>
+<h1 id='user'>User</h1><h2 id='get-balance'>Get balance</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/user/balance"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -351,8 +351,8 @@
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET https://api.kamiswiss.ch/user/balance</code></p>
-<h2 id='get-data'>Get data</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.kamiswiss.ch/user/data"</span>
+<p><code>GET https://api.noku.exchange/user/balance</code></p>
+<h2 id='get-data'>Get data</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/user/data"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -365,7 +365,7 @@
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
   </span><span class="s2">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kami@kamiswiss.ch"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kami@noku.exchange"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"nickname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kami"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"phone"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="s2">"verified"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
@@ -379,8 +379,8 @@
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET https://api.kamiswiss.ch/user/data</code></p>
-<h2 id='get-type'>Get type</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.kamiswiss.ch/user/type"</span>
+<p><code>GET https://api.noku.exchange/user/data</code></p>
+<h2 id='get-type'>Get type</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/user/type"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -442,8 +442,8 @@
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-3'>HTTP Request</h3>
-<p><code>GET https://api.kamiswiss.ch/user/type</code></p>
-<h2 id='get-limits'>Get limits</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.kamiswiss.ch/user/limits"</span>
+<p><code>GET https://api.noku.exchange/user/type</code></p>
+<h2 id='get-limits'>Get limits</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/user/limits"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -519,8 +519,8 @@
 </span></code></pre>
 <p>This endpoint retrieves account kyc limitations.</p>
 <h3 id='http-request-4'>HTTP Request</h3>
-<p><code>GET https://api.kamiswiss.ch/user/limits</code></p>
-<h2 id='get-workspace'>Get workspace</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.kamiswiss.ch/user/workspace"</span>
+<p><code>GET https://api.noku.exchange/user/limits</code></p>
+<h2 id='get-workspace'>Get workspace</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/user/workspace"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -545,8 +545,8 @@
 </span></code></pre>
 <p>This endpoint retrieves the list of noku accounts listed in your workspace.</p>
 <h3 id='http-request-5'>HTTP Request</h3>
-<p><code>GET https://api.kamiswiss.ch/user/workspace</code></p>
-<h1 id='data'>Data</h1><h2 id='get-instruments'>Get instruments</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.kamiswiss.ch/data/instruments"</span>
+<p><code>GET https://api.noku.exchange/user/workspace</code></p>
+<h1 id='data'>Data</h1><h2 id='get-instruments'>Get instruments</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/data/instruments"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -581,12 +581,12 @@
 </span></code></pre>
 <p>This endpoint retrieves all the trading instruments.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET https://api.kamiswiss.ch/data/instruments</code></p>
+<p><code>GET https://api.noku.exchange/data/instruments</code></p>
 
 <aside class="success">
 Instruments — list of all the trading instruments available right now
 </aside>
-<h2 id='get-instruments-2'>Get instruments</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.kamiswiss.ch/data/assets"</span>
+<h2 id='get-instruments-2'>Get instruments</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/data/assets"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -611,8 +611,8 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves all the listed assets.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET https://api.kamiswiss.ch/data/assets</code></p>
-<h2 id='get-candles'>Get candles</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.kamiswiss.ch/data/candles/history?symbol={ticker}&amp;resolution=10&amp;from=1554556417&amp;to=1554562417"</span>
+<p><code>GET https://api.noku.exchange/data/assets</code></p>
+<h2 id='get-candles'>Get candles</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/data/candles/history?symbol={ticker}&amp;resolution=10&amp;from=1554556417&amp;to=1554562417"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -700,7 +700,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-3'>HTTP Request</h3>
-<p><code>GET https://api.kamiswiss.ch/data/candles/history?symbol={ticker}&amp;resolution=10&amp;from=1554556417&amp;to=1554562417</code></p>
+<p><code>GET https://api.noku.exchange/data/candles/history?symbol={ticker}&amp;resolution=10&amp;from=1554556417&amp;to=1554562417</code></p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -713,7 +713,7 @@ Instruments — list of all the trading instruments available right now
 <td>The ticker of the trading instrument</td>
 </tr>
 </tbody></table>
-<h2 id='get-depth'>Get depth</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.kamiswiss.ch/data/depth"</span>
+<h2 id='get-depth'>Get depth</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/data/depth"</span>
   -d <span class="s1">'{ticker}'</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
@@ -1336,7 +1336,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-4'>HTTP Request</h3>
-<p><code>POST https://api.kamiswiss.ch/data/depth</code></p>
+<p><code>POST https://api.noku.exchange/data/depth</code></p>
 <h3 id='url-parameters-2'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -1349,7 +1349,7 @@ Instruments — list of all the trading instruments available right now
 <td>The ticker of the trading instrument</td>
 </tr>
 </tbody></table>
-<h2 id='get-history'>Get history</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.kamiswiss.ch/data/history/:ticker"</span>
+<h2 id='get-history'>Get history</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/data/history/:ticker"</span>
   -d <span class="sb">`</span><span class="o">{</span>offset, limit<span class="o">}</span><span class="sb">`</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
@@ -1375,7 +1375,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-5'>HTTP Request</h3>
-<p><code>POST https://api.kamiswiss.ch/data/history/:ticker</code></p>
+<p><code>POST https://api.noku.exchange/data/history/:ticker</code></p>
 <h3 id='url-parameters-3'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -1613,7 +1613,7 @@ Instruments — list of all the trading instruments available right now
 <td>Length of records to retrieve</td>
 </tr>
 </tbody></table>
-<h1 id='wallet'>Wallet</h1><h2 id='get-deposit-address'>Get deposit address</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.kamiswiss.ch/wallet/depositAddress/:asset"</span>
+<h1 id='wallet'>Wallet</h1><h2 id='get-deposit-address'>Get deposit address</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/wallet/depositAddress/:asset"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -1633,7 +1633,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET https://api.kamiswiss.ch/wallet/depositAddress/:asset</code></p>
+<p><code>GET https://api.noku.exchange/wallet/depositAddress/:asset</code></p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -1654,7 +1654,7 @@ Instruments — list of all the trading instruments available right now
 <td>Return a number of records not higher of limit</td>
 </tr>
 </tbody></table>
-<h2 id='create-withdrawal-request'>create withdrawal request</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.kamiswiss.ch/wallet/withdrawal/:asset"</span>
+<h2 id='create-withdrawal-request'>create withdrawal request</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/wallet/withdrawal/:asset"</span>
   -X PUT
   -d <span class="s1">'{asset, amount, address, validation}'</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
@@ -1672,7 +1672,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>PUT https://api.kamiswiss.ch/wallet/withdrawal/:asset</code></p>
+<p><code>PUT https://api.noku.exchange/wallet/withdrawal/:asset</code></p>
 <h3 id='url-parameters-2'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -1697,7 +1697,7 @@ Instruments — list of all the trading instruments available right now
 <td>Second Factor Authentication</td>
 </tr>
 </tbody></table>
-<h2 id='get-data'>Get data</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.kamiswiss.ch/wallet/data"</span>
+<h2 id='get-data'>Get data</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/wallet/data"</span>
   -d <span class="s2">"{pending, offset, limit}"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
@@ -1743,7 +1743,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-3'>HTTP Request</h3>
-<p><code>GET https://api.kamiswiss.ch/wallet/data</code></p>
+<p><code>GET https://api.noku.exchange/wallet/data</code></p>
 <h3 id='url-parameters-3'>URL Parameters</h3>
 <table><thead>
 <tr>
