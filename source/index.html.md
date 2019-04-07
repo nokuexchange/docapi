@@ -6,7 +6,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - javascript
 
 toc_footers:
-  - <a href='https://sysapi.kamiswiss.ch/auth/login'>Sign Up for a Developer Key</a>
+  - <a href='https://api.noku.exchange/auth/login'>Sign Up for a Developer Key</a>
 
 includes:
   - introduction
