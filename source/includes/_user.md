@@ -3,14 +3,14 @@
 ## Get balance 
 
 ```shell
-curl "https://api.kamiswiss.ch/user/balance"
+curl "https://api.noku.exchange/user/balance"
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let balance = api.balance();
 ```
 
@@ -29,19 +29,19 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/user/balance`
+`GET https://api.noku.exchange/user/balance`
 
 ## Get data 
 
 ```shell
-curl "https://api.kamiswiss.ch/user/data"
+curl "https://api.noku.exchange/user/data"
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let data = api.data();
 ```
 
@@ -60,19 +60,19 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/user/data`
+`GET https://api.noku.exchange/user/data`
 
 ## Get type 
 
 ```shell
-curl "https://api.kamiswiss.ch/user/type"
+curl "https://api.noku.exchange/user/type"
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let type = api.type();
 ```
 
@@ -91,4 +91,4 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/user/type`
+`GET https://api.noku.exchange/user/type`

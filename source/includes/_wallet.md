@@ -3,14 +3,14 @@
 ## Get deposit address
 
 ```shell
-curl "https://api.kamiswiss.ch/wallet/depositAddress/:asset"
+curl "https://api.noku.exchange/wallet/depositAddress/:asset"
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let deposit_address = api.depositAddress("{asset}");
 ```
 
@@ -30,7 +30,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/wallet/depositAddress/:asset`
+`GET https://api.noku.exchange/wallet/depositAddress/:asset`
 
 ### URL Parameters
 
@@ -41,14 +41,14 @@ asset | Cryptocurrency or token address
 ## Get deposits
 
 ```shell
-curl "https://api.kamiswiss.ch/wallet/deposits/:asset"
+curl "https://api.noku.exchange/wallet/deposits/:asset"
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let deposits = api.deposits("{assets}");
 ```
 
@@ -67,7 +67,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/wallet/deposits/:asset`
+`GET https://api.noku.exchange/wallet/deposits/:asset`
 
 ### URL Parameters
 
@@ -79,16 +79,16 @@ asset | Cryptocurrency or token address
 ## create withdrawal request
 
 ```shell
-curl "https://api.kamiswiss.ch/wallet/withdrawal/:asset"
+curl "https://api.noku.exchange/wallet/withdrawal/:asset"
   -X PUT
   -d '{asset, amount, address, validation}'
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let deposits = api.withdrawalRequest("{assets, amount, address, validation}");
 ```
 
@@ -105,7 +105,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`PUT https://api.kamiswiss.ch/wallet/withdrawal/:asset`
+`PUT https://api.noku.exchange/wallet/withdrawal/:asset`
 
 ### URL Parameters
 
@@ -120,14 +120,14 @@ validation | Second Factor Authentication
 ## create withdrawal request
 
 ```shell
-curl "https://api.kamiswiss.ch/wallet/withdrawal/:asset"
+curl "https://api.noku.exchange/wallet/withdrawal/:asset"
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let deposits = api.withdrawal("{assets}");
 ```
 
@@ -145,4 +145,4 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/wallet/withdrawal/:asset`
+`GET https://api.noku.exchange/wallet/withdrawal/:asset`

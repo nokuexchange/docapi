@@ -3,7 +3,7 @@
 ## Create order
 
 ```shell
-curl "https://api.kamiswiss.ch/exchange/order/:ticker"
+curl "https://api.noku.exchange/exchange/order/:ticker"
   -X PUT
   -d '{market, price, amount, side, defaultAccount}'
   -H "Content-Type: application/json"
@@ -11,9 +11,9 @@ curl "https://api.kamiswiss.ch/exchange/order/:ticker"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let candles = api.orderCreate("{ticker}", "{price}", "{amount}", "{side}", "{type:-limit}", "{defaultAccount:-default}");
 ```
 
@@ -40,7 +40,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`PUT https://api.kamiswiss.ch/exchange/order/:ticker`
+`PUT https://api.noku.exchange/exchange/order/:ticker`
 
 ### URL Parameters
 
@@ -56,7 +56,7 @@ defaultAccount | default trading account for the current user, always default un
 ## Pending orders
 
 ```shell
-curl "https://api.kamiswiss.ch/exchange/order/:ticker"
+curl "https://api.noku.exchange/exchange/order/:ticker"
   -X POST
   -d '{defaultAccount, market}'
   -H "Content-Type: application/json"
@@ -64,9 +64,9 @@ curl "https://api.kamiswiss.ch/exchange/order/:ticker"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let pendings = api.orderPendings("{ticker}", "{defaultAccount:-default}");
 ```
 
@@ -95,7 +95,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`PUT https://api.kamiswiss.ch/exchange/order/:ticker`
+`PUT https://api.noku.exchange/exchange/order/:ticker`
 
 ### URL Parameters
 
@@ -109,15 +109,15 @@ defaultAccount | default trading account for the current user, always default un
 ## Cancel order
 
 ```shell
-curl "https://api.kamiswiss.ch/exchange/order/:ticker/:id"
+curl "https://api.noku.exchange/exchange/order/:ticker/:id"
   -X DELETE
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let cancel = api.orderCancel("{ticker}", "{id}", "{defaultAccount:-default}");
 ```
 
@@ -144,7 +144,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`DELETE https://api.kamiswiss.ch/exchange/order/:ticker`
+`DELETE https://api.noku.exchange/exchange/order/:ticker`
 
 ### URL Parameters
 
@@ -157,14 +157,14 @@ defaultAccount | Default trading account for the current user, always default un
 ## Get transaction history 
 
 ```shell
-curl "https://api.kamiswiss.ch/exchange/history/:ticker/"
+curl "https://api.noku.exchange/exchange/history/:ticker/"
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let cancel = api.transactionHistory("{ticker}", "{defaultAccount:-default}");
 ```
 
@@ -194,7 +194,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`POST https://api.kamiswiss.ch/exchange/order/:ticker`
+`POST https://api.noku.exchange/exchange/order/:ticker`
 
 ### URL Parameters
 

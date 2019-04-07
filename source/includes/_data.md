@@ -3,14 +3,14 @@
 ## Get instruments
 
 ```shell
-curl "https://api.kamiswiss.ch/data/instruments"
+curl "https://api.noku.exchange/data/instruments"
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let instruments = api.instruments();
 ```
 
@@ -45,7 +45,7 @@ This endpoint retrieves all the trading instruments.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/data/instruments`
+`GET https://api.noku.exchange/data/instruments`
 
 <aside class="success">
 Instruments — list of all the trading instruments available right now
@@ -54,14 +54,14 @@ Instruments — list of all the trading instruments available right now
 ## Get market status
 
 ```shell
-curl "https://api.kamiswiss.ch/data/status/:ticker"
+curl "https://api.noku.exchange/data/status/:ticker"
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let status = api.marketStatus("{ticker}");
 ```
 
@@ -87,7 +87,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/data/status/:ticker`
+`GET https://api.noku.exchange/data/status/:ticker`
 
 ### URL Parameters
 
@@ -98,14 +98,14 @@ ticker | The ticker of the trading instrument
 ## Get order book
 
 ```shell
-curl "https://api.kamiswiss.ch/data/orderbook/:ticker/:side"
+curl "https://api.noku.exchange/data/orderbook/:ticker/:side"
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let orderbook_side = api.orderbook("{ticker}", "{side}");
 ```
 
@@ -132,7 +132,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/data/orderbook/:ticker/:side`
+`GET https://api.noku.exchange/data/orderbook/:ticker/:side`
 
 ### URL Parameters
 
@@ -145,14 +145,14 @@ side | The market side: ask or bid
 ## Get history
 
 ```shell
-curl "https://api.kamiswiss.ch/data/history/:ticker"
+curl "https://api.noku.exchange/data/history/:ticker"
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let history = api.history("{ticker}");
 ```
 
@@ -177,7 +177,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/data/history/:ticker`
+`GET https://api.noku.exchange/data/history/:ticker`
 
 ### URL Parameters
 
@@ -189,14 +189,14 @@ ticker | The ticker of the trading instrument
 ## Get candles
 
 ```shell
-curl "https://api.kamiswiss.ch/data/candles/:ticker"
+curl "https://api.noku.exchange/data/candles/:ticker"
   -H "Authorization: Bearer <api_token>"
 ```
 
 ```javascript
-const {KamiApi} = require('kamisdk');
+const NokuApi = require('nokuxapi');
 
-let api = KamiApi.authorize('<api_token>');
+let api = NokuApi.authorize('<api_token>');
 let candles = api.candles("{ticker}");
 ```
 
@@ -226,7 +226,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/data/candles/:ticker`
+`GET https://api.noku.exchange/data/candles/:ticker`
 
 ### URL Parameters
 
