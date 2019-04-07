@@ -52,7 +52,7 @@ Instruments — list of all the trading instruments available right now
 </aside>
 
 
-## Get instruments
+## Get assets
 
 ```shell
 curl "https://api.noku.exchange/data/assets"
@@ -88,6 +88,45 @@ This endpoint retrieves all the listed assets.
 ### HTTP Request
 
 `GET https://api.noku.exchange/data/assets`
+
+
+## Get rates
+
+```shell
+curl "https://api.noku.exchange/data/rates"
+  -H "Authorization: Bearer <api_token>"
+```
+
+```javascript
+const NokuApi = require('nokuxapi');
+
+let api = NokuApi.authorize('<api_token>');
+let rates = api.rates();
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "success": true,
+  "result": {
+    "BTCEUR": {
+      "price": "4595.8",
+      "volume": "2763.49879717"
+    },
+    "ETHEUR": {
+      "price": "149.695",
+      "volume": "55317.6013"
+    }
+  }
+}
+```
+
+This endpoint retrieves all the listed rates.
+
+### HTTP Request
+
+`GET https://api.noku.exchange/data/rates`
 
 ## Get candles
 
