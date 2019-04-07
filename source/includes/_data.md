@@ -3,7 +3,7 @@
 ## Get instruments
 
 ```shell
-curl "https://api.kamiswiss.ch/data/instruments"
+curl "https://api.noku.exchange/data/instruments"
   -H "Authorization: Bearer <api_token>"
 ```
 
@@ -45,7 +45,7 @@ This endpoint retrieves all the trading instruments.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/data/instruments`
+`GET https://api.noku.exchange/data/instruments`
 
 <aside class="success">
 Instruments — list of all the trading instruments available right now
@@ -55,7 +55,7 @@ Instruments — list of all the trading instruments available right now
 ## Get instruments
 
 ```shell
-curl "https://api.kamiswiss.ch/data/assets"
+curl "https://api.noku.exchange/data/assets"
   -H "Authorization: Bearer <api_token>"
 ```
 
@@ -87,12 +87,12 @@ This endpoint retrieves all the listed assets.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/data/assets`
+`GET https://api.noku.exchange/data/assets`
 
 ## Get candles
 
 ```shell
-curl "https://api.kamiswiss.ch/data/candles/history?symbol={ticker}&resolution=10&from=1554556417&to=1554562417"
+curl "https://api.noku.exchange/data/candles/history?symbol={ticker}&resolution=10&from=1554556417&to=1554562417"
   -H "Authorization: Bearer <api_token>"
 ```
 
@@ -187,7 +187,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/data/candles/history?symbol={ticker}&resolution=10&from=1554556417&to=1554562417`
+`GET https://api.noku.exchange/data/candles/history?symbol={ticker}&resolution=10&from=1554556417&to=1554562417`
 
 ### URL Parameters
 
@@ -198,7 +198,7 @@ ticker | The ticker of the trading instrument
 ## Get depth
 
 ```shell
-curl "https://api.kamiswiss.ch/data/depth"
+curl "https://api.noku.exchange/data/depth"
   -d '{ticker}'
   -H "Authorization: Bearer <api_token>"
 ```
@@ -828,7 +828,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`POST https://api.kamiswiss.ch/data/depth`
+`POST https://api.noku.exchange/data/depth`
 
 ### URL Parameters
 
@@ -840,7 +840,7 @@ ticker | The ticker of the trading instrument
 ## Get history
 
 ```shell
-curl "https://api.kamiswiss.ch/data/history/:ticker"
+curl "https://api.noku.exchange/data/history/:ticker"
   -d `{offset, limit}`
   -H "Authorization: Bearer <api_token>"
 ```
@@ -873,7 +873,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`POST https://api.kamiswiss.ch/data/history/:ticker`
+`POST https://api.noku.exchange/data/history/:ticker`
 
 ### URL Parameters
 

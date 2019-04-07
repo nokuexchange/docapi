@@ -3,7 +3,7 @@
 ## Get balance 
 
 ```shell
-curl "https://api.kamiswiss.ch/user/balance"
+curl "https://api.noku.exchange/user/balance"
   -H "Authorization: Bearer <api_token>"
 ```
 
@@ -53,12 +53,12 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/user/balance`
+`GET https://api.noku.exchange/user/balance`
 
 ## Get data 
 
 ```shell
-curl "https://api.kamiswiss.ch/user/data"
+curl "https://api.noku.exchange/user/data"
   -H "Authorization: Bearer <api_token>"
 ```
 
@@ -75,7 +75,7 @@ let data = api.data();
 {
   "success": true,
   "result": {
-    "email": "kami@kamiswiss.ch",
+    "email": "kami@noku.exchange",
     "nickname": "kami",
     "phone": {
       "verified": false,
@@ -92,12 +92,12 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/user/data`
+`GET https://api.noku.exchange/user/data`
 
 ## Get type 
 
 ```shell
-curl "https://api.kamiswiss.ch/user/type"
+curl "https://api.noku.exchange/user/type"
   -H "Authorization: Bearer <api_token>"
 ```
 
@@ -166,12 +166,12 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/user/type`
+`GET https://api.noku.exchange/user/type`
 
 ## Get limits 
 
 ```shell
-curl "https://api.kamiswiss.ch/user/limits"
+curl "https://api.noku.exchange/user/limits"
   -H "Authorization: Bearer <api_token>"
 ```
 
@@ -254,12 +254,12 @@ This endpoint retrieves account kyc limitations.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/user/limits`
+`GET https://api.noku.exchange/user/limits`
 
 ## Get workspace 
 
 ```shell
-curl "https://api.kamiswiss.ch/user/workspace"
+curl "https://api.noku.exchange/user/workspace"
   -H "Authorization: Bearer <api_token>"
 ```
 
@@ -291,5 +291,5 @@ This endpoint retrieves the list of noku accounts listed in your workspace.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/user/workspace`
+`GET https://api.noku.exchange/user/workspace`
 

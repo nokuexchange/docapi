@@ -3,7 +3,7 @@
 ## Get deposit address
 
 ```shell
-curl "https://api.kamiswiss.ch/wallet/depositAddress/:asset"
+curl "https://api.noku.exchange/wallet/depositAddress/:asset"
   -H "Authorization: Bearer <api_token>"
 ```
 
@@ -30,7 +30,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/wallet/depositAddress/:asset`
+`GET https://api.noku.exchange/wallet/depositAddress/:asset`
 
 ### URL Parameters
 
@@ -43,7 +43,7 @@ limit | Return a number of records not higher of limit
 ## create withdrawal request
 
 ```shell
-curl "https://api.kamiswiss.ch/wallet/withdrawal/:asset"
+curl "https://api.noku.exchange/wallet/withdrawal/:asset"
   -X PUT
   -d '{asset, amount, address, validation}'
   -H "Authorization: Bearer <api_token>"
@@ -68,7 +68,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`PUT https://api.kamiswiss.ch/wallet/withdrawal/:asset`
+`PUT https://api.noku.exchange/wallet/withdrawal/:asset`
 
 ### URL Parameters
 
@@ -83,7 +83,7 @@ validation.sfauth | Second Factor Authentication
 ## Get data
 
 ```shell
-curl "https://api.kamiswiss.ch/wallet/data"
+curl "https://api.noku.exchange/wallet/data"
   -d "{pending, offset, limit}"
   -H "Authorization: Bearer <api_token>"
 ```
@@ -136,7 +136,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.kamiswiss.ch/wallet/data`
+`GET https://api.noku.exchange/wallet/data`
 
 ### URL Parameters
 
