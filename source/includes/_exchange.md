@@ -157,7 +157,8 @@ defaultAccount | Default trading account for the current user, always default un
 ## Get transaction history 
 
 ```shell
-curl "https://api.noku.exchange/exchange/history/:ticker/"
+curl "https://api.noku.exchange/exchange/history"
+  -d "{ticker, offset, limits}"
   -H "Authorization: Bearer <api_token>"
 ```
 
@@ -165,7 +166,7 @@ curl "https://api.noku.exchange/exchange/history/:ticker/"
 const NokuApi = require('nokuxapi');
 
 let api = NokuApi.authorize('<api_token>');
-let cancel = api.transactionHistory("{ticker}", "{defaultAccount:-default}");
+let cancel = api.transactionHistory(`{ticker}`, `{offset}`, `{limit}`);
 ```
 
 > The above command returns JSON structured like this:
@@ -201,4 +202,5 @@ This endpoint retrieves the selected market status.
 Parameter | Description
 --------- | -----------
 ticker | The ticker of the trading instrument
-defaultAccount | Default trading account for the current user, always default unless you know what you are doing.
+offset | Start offset
+limit | Length of records to retrieve
