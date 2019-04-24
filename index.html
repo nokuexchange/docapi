@@ -223,7 +223,7 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
           </li>
           <li>
-            <a href="#user" class="toc-h1 toc-link" data-title="User">User</a>
+            <a href="#user-v1" class="toc-h1 toc-link" data-title="User v1">User v1</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#get-balance" class="toc-h2 toc-link" data-title="Get balance">Get balance</a>
@@ -243,7 +243,7 @@
               </ul>
           </li>
           <li>
-            <a href="#data" class="toc-h1 toc-link" data-title="Data">Data</a>
+            <a href="#data-v1" class="toc-h1 toc-link" data-title="Data v1">Data v1</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#get-instruments" class="toc-h2 toc-link" data-title="Get instruments">Get instruments</a>
@@ -266,7 +266,7 @@
               </ul>
           </li>
           <li>
-            <a href="#exchange" class="toc-h1 toc-link" data-title="Exchange">Exchange</a>
+            <a href="#exchange-v1" class="toc-h1 toc-link" data-title="Exchange v1">Exchange v1</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#create-order" class="toc-h2 toc-link" data-title="Create order">Create order</a>
@@ -283,7 +283,7 @@
               </ul>
           </li>
           <li>
-            <a href="#wallet" class="toc-h1 toc-link" data-title="Wallet">Wallet</a>
+            <a href="#wallet-v1" class="toc-h1 toc-link" data-title="Wallet v1">Wallet v1</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#get-deposit-address" class="toc-h2 toc-link" data-title="Get deposit address">Get deposit address</a>
@@ -311,7 +311,7 @@
 <p>Noku Exchange API documentations</p>
 
 <p>We support language bindings in Shell and JavaScript, you can view code examples in the dark area to the right, and you can switch the examples&#39;programming language through the tabs in the top right.</p>
-<h1 id='user'>User</h1><h2 id='get-balance'>Get balance</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/user/balance"</span>
+<h1 id='user-v1'>User v1</h1><h2 id='get-balance'>Get balance</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/user/balance"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -354,8 +354,8 @@
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET https://api.noku.exchange/user/balance</code></p>
-<h2 id='get-data'>Get data</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/user/data"</span>
+<p><code>GET https://api.noku.exchange/v1/user/balance</code></p>
+<h2 id='get-data'>Get data</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/user/data"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -382,8 +382,8 @@
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET https://api.noku.exchange/user/data</code></p>
-<h2 id='get-type'>Get type</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/user/type"</span>
+<p><code>GET https://api.noku.exchange/v1/user/data</code></p>
+<h2 id='get-type'>Get type</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/user/type"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -445,8 +445,8 @@
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-3'>HTTP Request</h3>
-<p><code>GET https://api.noku.exchange/user/type</code></p>
-<h2 id='get-limits'>Get limits</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/user/limits"</span>
+<p><code>GET https://api.noku.exchange/v1/user/type</code></p>
+<h2 id='get-limits'>Get limits</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/user/limits"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -522,8 +522,8 @@
 </span></code></pre>
 <p>This endpoint retrieves account kyc limitations.</p>
 <h3 id='http-request-4'>HTTP Request</h3>
-<p><code>GET https://api.noku.exchange/user/limits</code></p>
-<h2 id='get-workspace'>Get workspace</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/user/workspace"</span>
+<p><code>GET https://api.noku.exchange/v1/user/limits</code></p>
+<h2 id='get-workspace'>Get workspace</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/user/workspace"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -548,9 +548,9 @@
 </span></code></pre>
 <p>This endpoint retrieves the list of noku accounts listed in your workspace.</p>
 <h3 id='http-request-5'>HTTP Request</h3>
-<p><code>GET https://api.noku.exchange/user/workspace</code></p>
-<h1 id='data'>Data</h1><h2 id='get-instruments'>Get instruments</h2><pre class="highlight shell tab-shell"><code>curl <span class="sb">`</span>https://api.noku.exchange/data/instruments<span class="sb">`</span>
-  -H <span class="sb">`</span>Authorization: Bearer &lt;api_token&gt;<span class="sb">`</span>
+<p><code>GET https://api.noku.exchange/v1/user/workspace</code></p>
+<h1 id='data-v1'>Data v1</h1><h2 id='get-instruments'>Get instruments</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/data/instruments"</span>
+  -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">NokuApi</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'&lt;api_token&gt;'</span><span class="p">);</span>
@@ -584,13 +584,13 @@
 </span></code></pre>
 <p>This endpoint retrieves all the trading instruments.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET https://api.noku.exchange/data/instruments</code></p>
+<p><code>GET https://api.noku.exchange/v1/data/instruments</code></p>
 
 <aside class="success">
 Instruments — list of all the trading instruments available right now
 </aside>
-<h2 id='get-assets'>Get assets</h2><pre class="highlight shell tab-shell"><code>curl <span class="sb">`</span>https://api.noku.exchange/data/assets<span class="sb">`</span>
-  -H <span class="sb">`</span>Authorization: Bearer &lt;api_token&gt;<span class="sb">`</span>
+<h2 id='get-assets'>Get assets</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/data/assets"</span>
+  -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">NokuApi</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'&lt;api_token&gt;'</span><span class="p">);</span>
@@ -614,9 +614,9 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves all the listed assets.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET https://api.noku.exchange/data/assets</code></p>
-<h2 id='get-rates'>Get rates</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/data/rates"</span>
-  -H <span class="sb">`</span>Authorization: Bearer &lt;api_token&gt;<span class="sb">`</span>
+<p><code>GET https://api.noku.exchange/v1/data/assets</code></p>
+<h2 id='get-rates'>Get rates</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/data/rates"</span>
+  -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">NokuApi</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'&lt;api_token&gt;'</span><span class="p">);</span>
@@ -641,9 +641,9 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves all the listed rates.</p>
 <h3 id='http-request-3'>HTTP Request</h3>
-<p><code>GET https://api.noku.exchange/data/rates</code></p>
-<h2 id='get-candles'>Get candles</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/data/candles/history?symbol={ticker}&amp;resolution=10&amp;from=1554556417&amp;to=1554562417"</span>
-  -H <span class="sb">`</span>Authorization: Bearer &lt;api_token&gt;<span class="sb">`</span>
+<p><code>GET https://api.noku.exchange/v1/data/rates</code></p>
+<h2 id='get-candles'>Get candles</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/data/candles/history?symbol={ticker}&amp;resolution=10&amp;from=1554556417&amp;to=1554562417"</span>
+  -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">NokuApi</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'&lt;api_token&gt;'</span><span class="p">);</span>
@@ -730,7 +730,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-4'>HTTP Request</h3>
-<p><code>GET https://api.noku.exchange/data/candles/history?symbol={ticker}&amp;resolution=10&amp;from=1554556417&amp;to=1554562417</code></p>
+<p><code>GET https://api.noku.exchange/v1/data/candles/history?symbol={ticker}&amp;resolution=10&amp;from=1554556417&amp;to=1554562417</code></p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -743,8 +743,8 @@ Instruments — list of all the trading instruments available right now
 <td>The ticker of the trading instrument</td>
 </tr>
 </tbody></table>
-<h2 id='get-depth'>Get depth</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/data/depth"</span>
-  -d <span class="s1">'{ticker}'</span>
+<h2 id='get-depth'>Get depth</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/data/depth"</span>
+  -d <span class="s2">"{ticker}"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -1366,7 +1366,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-5'>HTTP Request</h3>
-<p><code>POST https://api.noku.exchange/data/depth</code></p>
+<p><code>POST https://api.noku.exchange/v1/data/depth</code></p>
 <h3 id='url-parameters-2'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -1379,9 +1379,9 @@ Instruments — list of all the trading instruments available right now
 <td>The ticker of the trading instrument</td>
 </tr>
 </tbody></table>
-<h2 id='get-history'>Get history</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/data/history/:ticker"</span>
-  -d <span class="sb">`</span><span class="o">{</span>offset, limit<span class="o">}</span><span class="sb">`</span>
-  -H <span class="sb">`</span>Authorization: Bearer &lt;api_token&gt;<span class="sb">`</span>
+<h2 id='get-history'>Get history</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/data/history/:ticker"</span>
+  -d <span class="s2">"{offset, limit}"</span>
+  -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">NokuApi</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'&lt;api_token&gt;'</span><span class="p">);</span>
@@ -1405,7 +1405,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-6'>HTTP Request</h3>
-<p><code>POST https://api.noku.exchange/data/history/:ticker</code></p>
+<p><code>POST https://api.noku.exchange/v1/data/history/:ticker</code></p>
 <h3 id='url-parameters-3'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -1426,7 +1426,7 @@ Instruments — list of all the trading instruments available right now
 <td>Length of requested data</td>
 </tr>
 </tbody></table>
-<h1 id='exchange'>Exchange</h1><h2 id='create-order'>Create order</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/exchange/order/:ticker"</span>
+<h1 id='exchange-v1'>Exchange v1</h1><h2 id='create-order'>Create order</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/exchange/order/:ticker"</span>
   -X PUT
   -d <span class="s1">'{market, price, amount, side, defaultAccount}'</span>
   -H <span class="s2">"Content-Type: application/json"</span>
@@ -1456,7 +1456,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>PUT https://api.noku.exchange/exchange/order/:ticker</code></p>
+<p><code>PUT https://api.noku.exchange/v1/exchange/order/:ticker</code></p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -1489,7 +1489,7 @@ Instruments — list of all the trading instruments available right now
 <td>default trading account for the current user, always default unless you know what you are doing.</td>
 </tr>
 </tbody></table>
-<h2 id='pending-orders'>Pending orders</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/exchange/order/:ticker"</span>
+<h2 id='pending-orders'>Pending orders</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/exchange/order/:ticker"</span>
   -X POST
   -d <span class="s1">'{defaultAccount, market}'</span>
   -H <span class="s2">"Content-Type: application/json"</span>
@@ -1521,7 +1521,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>PUT https://api.noku.exchange/exchange/order/:ticker</code></p>
+<p><code>PUT https://api.noku.exchange/v1/exchange/order/:ticker</code></p>
 <h3 id='url-parameters-2'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -1542,7 +1542,7 @@ Instruments — list of all the trading instruments available right now
 <td>default trading account for the current user, always default unless you know what you are doing.</td>
 </tr>
 </tbody></table>
-<h2 id='cancel-order'>Cancel order</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/exchange/order/:ticker/:id"</span>
+<h2 id='cancel-order'>Cancel order</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/exchange/order/:ticker/:id"</span>
   -X DELETE
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
@@ -1570,7 +1570,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE https://api.noku.exchange/exchange/order/:ticker</code></p>
+<p><code>DELETE https://api.noku.exchange/v1/exchange/order/:ticker</code></p>
 <h3 id='url-parameters-3'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -1591,7 +1591,7 @@ Instruments — list of all the trading instruments available right now
 <td>Default trading account for the current user, always default unless you know what you are doing.</td>
 </tr>
 </tbody></table>
-<h2 id='get-transaction-history'>Get transaction history</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/exchange/history"</span>
+<h2 id='get-transaction-history'>Get transaction history</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/exchange/history"</span>
   -d <span class="s2">"{ticker, offset, limits}"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
@@ -1622,7 +1622,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-4'>HTTP Request</h3>
-<p><code>POST https://api.noku.exchange/exchange/order/:ticker</code></p>
+<p><code>POST https://api.noku.exchange/v1/exchange/order/:ticker</code></p>
 <h3 id='url-parameters-4'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -1643,7 +1643,7 @@ Instruments — list of all the trading instruments available right now
 <td>Length of records to retrieve</td>
 </tr>
 </tbody></table>
-<h1 id='wallet'>Wallet</h1><h2 id='get-deposit-address'>Get deposit address</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/wallet/depositAddress/:asset"</span>
+<h1 id='wallet-v1'>Wallet v1</h1><h2 id='get-deposit-address'>Get deposit address</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/wallet/depositAddress/:asset"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
@@ -1663,7 +1663,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET https://api.noku.exchange/wallet/depositAddress/:asset</code></p>
+<p><code>GET https://api.noku.exchange/v1/wallet/depositAddress/:asset</code></p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -1684,7 +1684,7 @@ Instruments — list of all the trading instruments available right now
 <td>Return a number of records not higher of limit</td>
 </tr>
 </tbody></table>
-<h2 id='create-withdrawal-request'>create withdrawal request</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/wallet/withdrawal/:asset"</span>
+<h2 id='create-withdrawal-request'>create withdrawal request</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/wallet/withdrawal/:asset"</span>
   -X PUT
   -d <span class="s1">'{asset, amount, address, validation}'</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
@@ -1702,7 +1702,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>PUT https://api.noku.exchange/wallet/withdrawal/:asset</code></p>
+<p><code>PUT https://api.noku.exchange/v1/wallet/withdrawal/:asset</code></p>
 <h3 id='url-parameters-2'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -1727,7 +1727,7 @@ Instruments — list of all the trading instruments available right now
 <td>Second Factor Authentication</td>
 </tr>
 </tbody></table>
-<h2 id='get-data'>Get data</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/wallet/data"</span>
+<h2 id='get-data'>Get data</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/v1/wallet/data"</span>
   -d <span class="s2">"{pending, offset, limit}"</span>
   -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
@@ -1773,7 +1773,7 @@ Instruments — list of all the trading instruments available right now
 </span></code></pre>
 <p>This endpoint retrieves the selected market status.</p>
 <h3 id='http-request-3'>HTTP Request</h3>
-<p><code>GET https://api.noku.exchange/wallet/data</code></p>
+<p><code>GET https://api.noku.exchange/v1/wallet/data</code></p>
 <h3 id='url-parameters-3'>URL Parameters</h3>
 <table><thead>
 <tr>
