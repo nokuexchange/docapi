@@ -589,8 +589,8 @@
 <aside class="success">
 Instruments — list of all the trading instruments available right now
 </aside>
-<h2 id='get-assets'>Get assets</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/data/assets"</span>
-  -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
+<h2 id='get-assets'>Get assets</h2><pre class="highlight shell tab-shell"><code>curl <span class="sb">`</span>https://api.noku.exchange/data/assets<span class="sb">`</span>
+  -H <span class="sb">`</span>Authorization: Bearer &lt;api_token&gt;<span class="sb">`</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">NokuApi</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'&lt;api_token&gt;'</span><span class="p">);</span>
@@ -616,7 +616,7 @@ Instruments — list of all the trading instruments available right now
 <h3 id='http-request-2'>HTTP Request</h3>
 <p><code>GET https://api.noku.exchange/data/assets</code></p>
 <h2 id='get-rates'>Get rates</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/data/rates"</span>
-  -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
+  -H <span class="sb">`</span>Authorization: Bearer &lt;api_token&gt;<span class="sb">`</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">NokuApi</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'&lt;api_token&gt;'</span><span class="p">);</span>
@@ -643,7 +643,7 @@ Instruments — list of all the trading instruments available right now
 <h3 id='http-request-3'>HTTP Request</h3>
 <p><code>GET https://api.noku.exchange/data/rates</code></p>
 <h2 id='get-candles'>Get candles</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/data/candles/history?symbol={ticker}&amp;resolution=10&amp;from=1554556417&amp;to=1554562417"</span>
-  -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
+  -H <span class="sb">`</span>Authorization: Bearer &lt;api_token&gt;<span class="sb">`</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">NokuApi</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'&lt;api_token&gt;'</span><span class="p">);</span>
@@ -1381,7 +1381,7 @@ Instruments — list of all the trading instruments available right now
 </tbody></table>
 <h2 id='get-history'>Get history</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.noku.exchange/data/history/:ticker"</span>
   -d <span class="sb">`</span><span class="o">{</span>offset, limit<span class="o">}</span><span class="sb">`</span>
-  -H <span class="s2">"Authorization: Bearer &lt;api_token&gt;"</span>
+  -H <span class="sb">`</span>Authorization: Bearer &lt;api_token&gt;<span class="sb">`</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">NokuApi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'nokuxapi'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">NokuApi</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'&lt;api_token&gt;'</span><span class="p">);</span>
