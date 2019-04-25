@@ -1,19 +1,19 @@
-# Exchange 
+# Exchange v1
 
 ## Create order
 
 ```shell
-curl "https://api.noku.exchange/exchange/order/:ticker"
+curl "https://<%= config[:api_domain] %>/v1/exchange/order/:ticker"
   -X PUT
   -d '{market, price, amount, side, defaultAccount}'
   -H "Content-Type: application/json"
-  -H "Authorization: Bearer <api_token>"
+  -H "<%= config[:authorization_method] %>"
 ```
 
 ```javascript
-const NokuApi = require('nokuxapi');
+const <%= config[:sdk_class_name] %> = require('<%= config[:sdk_name] %>');
 
-let api = NokuApi.authorize('<api_token>');
+let api = <%= config[:sdk_class_name] %>.authorize('<api_token>');
 let candles = api.orderCreate("{ticker}", "{price}", "{amount}", "{side}", "{type:-limit}", "{defaultAccount:-default}");
 ```
 
@@ -40,7 +40,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`PUT https://api.noku.exchange/exchange/order/:ticker`
+`PUT https://<%= config[:api_domain] %>/v1/exchange/order/:ticker`
 
 ### URL Parameters
 
@@ -56,17 +56,17 @@ defaultAccount | default trading account for the current user, always default un
 ## Pending orders
 
 ```shell
-curl "https://api.noku.exchange/exchange/order/:ticker"
+curl "https://<%= config[:api_domain] %>/v1/exchange/order/:ticker"
   -X POST
   -d '{defaultAccount, market}'
   -H "Content-Type: application/json"
-  -H "Authorization: Bearer <api_token>"
+  -H "<%= config[:authorization_method] %>"
 ```
 
 ```javascript
-const NokuApi = require('nokuxapi');
+const <%= config[:sdk_class_name] %> = require('<%= config[:sdk_name] %>');
 
-let api = NokuApi.authorize('<api_token>');
+let api = <%= config[:sdk_class_name] %>.authorize('<api_token>');
 let pendings = api.orderPendings("{ticker}", "{defaultAccount:-default}");
 ```
 
@@ -95,7 +95,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`PUT https://api.noku.exchange/exchange/order/:ticker`
+`PUT https://<%= config[:api_domain] %>/v1/exchange/order/:ticker`
 
 ### URL Parameters
 
@@ -109,15 +109,15 @@ defaultAccount | default trading account for the current user, always default un
 ## Cancel order
 
 ```shell
-curl "https://api.noku.exchange/exchange/order/:ticker/:id"
+curl "https://<%= config[:api_domain] %>/v1/exchange/order/:ticker/:id"
   -X DELETE
-  -H "Authorization: Bearer <api_token>"
+  -H "<%= config[:authorization_method] %>"
 ```
 
 ```javascript
-const NokuApi = require('nokuxapi');
+const <%= config[:sdk_class_name] %> = require('<%= config[:sdk_name] %>');
 
-let api = NokuApi.authorize('<api_token>');
+let api = <%= config[:sdk_class_name] %>.authorize('<api_token>');
 let cancel = api.orderCancel("{ticker}", "{id}", "{defaultAccount:-default}");
 ```
 
@@ -144,7 +144,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`DELETE https://api.noku.exchange/exchange/order/:ticker`
+`DELETE https://<%= config[:api_domain] %>/v1/exchange/order/:ticker`
 
 ### URL Parameters
 
@@ -157,15 +157,15 @@ defaultAccount | Default trading account for the current user, always default un
 ## Get transaction history 
 
 ```shell
-curl "https://api.noku.exchange/exchange/history"
+curl "https://<%= config[:api_domain] %>/v1/exchange/history"
   -d "{ticker, offset, limits}"
-  -H "Authorization: Bearer <api_token>"
+  -H "<%= config[:authorization_method] %>"
 ```
 
 ```javascript
-const NokuApi = require('nokuxapi');
+const <%= config[:sdk_class_name] %> = require('<%= config[:sdk_name] %>');
 
-let api = NokuApi.authorize('<api_token>');
+let api = <%= config[:sdk_class_name] %>.authorize('<api_token>');
 let cancel = api.transactionHistory(`{ticker}`, `{offset}`, `{limit}`);
 ```
 
@@ -195,7 +195,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`POST https://api.noku.exchange/exchange/order/:ticker`
+`POST https://<%= config[:api_domain] %>/v1/exchange/order/:ticker`
 
 ### URL Parameters
 

@@ -53,6 +53,18 @@ end
 # If you want Middleman to listen on a different port, you can set that below
 set :port, 4567
 
+set :exchange_name, 'Noku Exchange'
+set :exchange_domain, 'noku.exchange'
+set :api_domain, 'api.noku.exchange'
+set :sdk_name, 'nokuxapi'
+set :sdk_class_name, 'NokuApi'
+set :authorization_method, 'Authorization: Bearer <api_token>'
+config[:exchange_domain]
+config[:api_domain]
+config[:sdk_name]
+config[:sdk_class_name]
+config[:authorization_method]
+
 helpers do
   require './lib/toc_data.rb'
 end

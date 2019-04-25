@@ -1,16 +1,16 @@
-# Wallet
+# Wallet v1
 
 ## Get deposit address
 
 ```shell
-curl "https://api.noku.exchange/wallet/depositAddress/:asset"
-  -H "Authorization: Bearer <api_token>"
+curl "https://<%= config[:api_domain] %>/v1/wallet/depositAddress/:asset"
+  -H "<%= config[:authorization_method] %>"
 ```
 
 ```javascript
-const NokuApi = require('nokuxapi');
+const <%= config[:sdk_class_name] %> = require('<%= config[:sdk_name] %>');
 
-let api = NokuApi.authorize('<api_token>');
+let api = <%= config[:sdk_class_name] %>.authorize('<api_token>');
 let deposit_address = api.depositAddress("{asset}");
 ```
 
@@ -30,7 +30,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.noku.exchange/wallet/depositAddress/:asset`
+`GET https://<%= config[:api_domain] %>/v1/wallet/depositAddress/:asset`
 
 ### URL Parameters
 
@@ -43,16 +43,16 @@ limit | Return a number of records not higher of limit
 ## create withdrawal request
 
 ```shell
-curl "https://api.noku.exchange/wallet/withdrawal/:asset"
+curl "https://<%= config[:api_domain] %>/v1/wallet/withdrawal/:asset"
   -X PUT
   -d '{asset, amount, address, validation}'
-  -H "Authorization: Bearer <api_token>"
+  -H "<%= config[:authorization_method] %>"
 ```
 
 ```javascript
-const NokuApi = require('nokuxapi');
+const <%= config[:sdk_class_name] %> = require('<%= config[:sdk_name] %>');
 
-let api = NokuApi.authorize('<api_token>');
+let api = <%= config[:sdk_class_name] %>.authorize('<api_token>');
 let deposits = api.withdrawalRequest("{assets, amount, address, validation}");
 ```
 
@@ -68,7 +68,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`PUT https://api.noku.exchange/wallet/withdrawal/:asset`
+`PUT https://<%= config[:api_domain] %>/v1/wallet/withdrawal/:asset`
 
 ### URL Parameters
 
@@ -83,15 +83,15 @@ validation.sfauth | Second Factor Authentication
 ## Get data
 
 ```shell
-curl "https://api.noku.exchange/wallet/data"
+curl "https://<%= config[:api_domain] %>/v1/wallet/data"
   -d "{pending, offset, limit}"
-  -H "Authorization: Bearer <api_token>"
+  -H "<%= config[:authorization_method] %>"
 ```
 
 ```javascript
-const NokuApi = require('nokuxapi');
+const <%= config[:sdk_class_name] %> = require('<%= config[:sdk_name] %>');
 
-let api = NokuApi.authorize('<api_token>');
+let api = <%= config[:sdk_class_name] %>.authorize('<api_token>');
 let deposits = api.walletData("{pending, offset:0, limit:20}");
 ```
 
@@ -136,7 +136,7 @@ This endpoint retrieves the selected market status.
 
 ### HTTP Request
 
-`GET https://api.noku.exchange/wallet/data`
+`GET https://<%= config[:api_domain] %>/v1/wallet/data`
 
 ### URL Parameters
 
